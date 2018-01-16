@@ -13,6 +13,21 @@ router.route("/new")
 	})
 
 
+router.route("/")
+	.post((req, res) => {
+		User.create(req.body, (err, createdUser) => {
+			if (err) {
+				console.log(err)
+			} else {
+				console.log("Posted")
+				res.send(createdUser)
+			}
+		})
+	})
+
+
+
+
 
 
 
