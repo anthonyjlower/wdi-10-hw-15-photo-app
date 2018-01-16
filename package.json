@@ -1,0 +1,25 @@
+{
+  "name": "wdi-10-hw-15-photo-app",
+  "version": "1.0.0",
+  "description": "![ga](http://mobbook.generalassemb.ly/ga_cog.png)",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anthonyjlower/wdi-10-hw-15-photo-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anthonyjlower/wdi-10-hw-15-photo-app/issues"
+  },
+  "homepage": "https://github.com/anthonyjlower/wdi-10-hw-15-photo-app#readme",
+  "dependencies": {
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.9"
+  }
+}
