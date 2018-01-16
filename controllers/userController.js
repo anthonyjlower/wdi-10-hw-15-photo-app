@@ -14,6 +14,13 @@ router.route("/new")
 
 
 router.route("/")
+	.get((req, res) => {
+		User.find({}, (err, foundUsers) => {
+			res.render("users/index.ejs", {
+				users: foundUsers
+			})
+		})
+	})
 	.post((req, res) => {
 		User.create(req.body, (err, createdUser) => {
 			if (err) {
