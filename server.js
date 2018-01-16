@@ -7,6 +7,12 @@ require("./db/db.js")
 
 
 
+
+
+const userController = require("./controllers/userController.js");
+app.use("/users", userController);
+
+
 // Homepage Route
 app.get("/", (req, res) => {
 	res.render("index.ejs")
