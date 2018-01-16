@@ -34,7 +34,18 @@ router.route("/")
 
 
 
-
+router.route("/:id")
+	.get((req, res) => {
+		User.findById(req.params.id, (err, foundUser) => {
+			if (err) {
+				console.log(err)
+			} else {
+				res.render("users/show.ejs", {
+					user: foundUser
+				})
+			}
+		})
+	})
 
 
 
