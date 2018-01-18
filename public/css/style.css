@@ -1,0 +1,80 @@
+* {
+  text-decoration: none;
+}
+body {
+  width: 96vw;
+  background-color: #dee9fc;
+  margin: 0 auto;
+}
+nav {
+  width: 96vw;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.nav-btn {
+  height: 98px;
+  width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #dee9fc;
+}
+nav div:hover {
+  background-color: #6395f2;
+}
+header {
+  background-color: #091834;
+  height: 100px;
+}
+h1 {
+  color: #0a337f;
+}
+li a {
+  color: #0a337f;
+}
+.user-info {
+  margin: 10px auto;
+  border-top: 3px solid #1258dc;
+  border-bottom: 3px solid #1258dc;
+  display: flex;
+  flex-direction: column;
+}
+#info {
+  display: flex;
+  justify-content: space-between;
+}
+button {
+  background-color: #0a337f;
+  color: #dee9fc;
+  height: 50px;
+  width: 100px;
+  margin: auto;
+  cursor: pointer;
+}
+.btns {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.pic-display {
+  width: 96vw;
+  background-color: #6395f2;
+  display: block;
+  margin: 0 auto;
+}
+img {
+  width: calc(24vw);
+  padding: 10px;
+  border-radius: 10%;
+}
+.item {
+  width: 100px;
+  display: inline-block;
+  margin-top: 5px;
+}
+.new-form {
+  text-align: center;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}

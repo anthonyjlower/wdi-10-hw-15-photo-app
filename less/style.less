@@ -1,0 +1,92 @@
+@body-width: 96vw;
+@primary-background:rgb(222, 233, 252);
+@secondary-background:rgb(99, 149, 242);
+@primary-accent:rgb(18, 88, 220);
+@secondary-accent:rgb(10, 51, 127);
+@header-footer:rgb(9, 24, 52);
+
+
+*{
+	text-decoration: none;
+	// border: 1px solid black;
+}
+body{
+	width: @body-width;
+	background-color: @primary-background;
+	margin: 0 auto;
+}
+nav{
+	width: @body-width;
+	display: flex;
+	flex-direction: row-reverse;
+}
+.nav-btn{
+	height: 98px;
+	width: 100px;
+	text-align: center;
+	text-transform: uppercase;
+	color: @primary-background;
+}
+nav div:hover{
+	background-color: @secondary-background;
+}
+header{
+	background-color: @header-footer;
+	height: 100px;
+}
+h1{
+	color: @secondary-accent;
+}
+li a{
+	color: @secondary-accent;
+}
+.user-info{
+	margin: 10px auto;
+	border-top: 3px solid @primary-accent;
+	border-bottom: 3px solid @primary-accent;
+	display: flex;
+	flex-direction: column;
+}
+#info{
+	display: flex;
+	justify-content: space-between;
+}
+button{
+	background-color: @secondary-accent;
+	color: @primary-background;
+	height: 50px;
+	width: 100px;
+	margin: auto;
+	cursor: pointer;
+}
+.btns{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.pic-display{
+	width: @body-width;
+	background-color: @secondary-background;
+	display: block;
+	margin: 0 auto;
+}
+img{
+	width: calc(@body-width / 4);
+	padding: 10px;
+	border-radius: 10%;
+}
+.item{
+	width: 100px;
+	display: inline-block;
+	margin-top: 5px;
+}
+form button{
+	// margin: 30px;
+}
+.new-form{
+	text-align: center;
+}
+ul{
+	list-style-type: none;
+	padding: 0;
+}

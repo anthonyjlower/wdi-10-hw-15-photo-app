@@ -2,18 +2,41 @@
 <html>
 <head>
 	<title><%= user.userName %></title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
 
 	<header>
 		<nav>
-			<a href="/users">Back to Index</a>
+			<a href="/users"><div class=nav-btn>Back to Index</div></a>	
+			<a href="/users/new"><div class=nav-btn>New</div></a>	
+			<a href="/"><div class=nav-btn>Home</div></a>	
 		</nav>
 	</header>
 
-	<h1>User Name: <%= user.userName %></h1>
+	<section class="user-info">
+		<wrapper id="info">
+			<wrapper class="text-info">
+				<h1>User Info</h1>
+				<p>User Name: <%= user.userName %></p>
+				<p>Contact Info: <%= user.email%></p>
+			</wrapper>	
 
-	<h2>Contact Info: <%= user.email%></h2>
+			<wrapper class="btns">
+				<form action="/users/<%= user.id %>?_method=DELETE" method="POST">
+					<button>Delete User</button>
+				</form>
+
+				
+					<a href="/users/<%= user.id %>/edit"><button>Edit User Info</button></a>
+				
+			</wrapper>
+		</wrapper>
+	</section>
+
+	<section class="pic-display">
+		<img src="https://i.ytimg.com/vi/ziJOYOeG1yc/maxresdefault.jpg">
+	</section>
 
 </body>
 </html>
